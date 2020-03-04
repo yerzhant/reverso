@@ -1,0 +1,69 @@
+$oswald-font-family: "Oswald", sans-serif;
+$roboto-font-family: "Roboto", sans-serif;
+$open-sans-font-family: "Open Sans", sans-serif;
+
+$button-radius: 20px;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $roboto-font-family;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/header-bg.jpg) no-repeat center;
+
+  &::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.4);
+  }
+
+  &__center {
+    z-index: 10;
+    color: #fff;
+  }
+
+  &__title {
+    font-family: $oswald-font-family;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: $oswald-font-family;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+
+  &__order-button {
+    display: inline-block;
+    padding: 12px 30px;
+    color: rgb(236, 216, 37);
+    font-family: $oswald-font-family;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgb(115, 10, 235);
+    border-top-left-radius: $button-radius;
+    border-bottom-right-radius: $button-radius;
+    border-bottom: 3px solid rgb(236, 216, 37);
+  }
+}
