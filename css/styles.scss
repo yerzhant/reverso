@@ -105,6 +105,12 @@ body {
   }
 }
 
+.main {
+  .section:nth-child(even) {
+    background-color: #181818;
+  }
+}
+
 .section {
   padding: 150px 0;
 
