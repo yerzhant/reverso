@@ -140,4 +140,37 @@ body {
 .section__text p {
   margin-bottom: 20px;
 }
+
+.section__text ul {
+  list-style: none;
+  padding-left: 70px;
+}
+
+.section__text li {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.section__text li:last-child {
+  margin-bottom: 0;
+}
+
+.section__text li img {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 60px;
+}
+
+.section__list-item-title {
+  font-family: "Oswald", sans-serif;
+  color: #ecd825;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.how-we-work__plan {
+  -webkit-filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+          filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+}
 /*# sourceMappingURL=styles.css.map */
