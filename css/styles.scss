@@ -1,12 +1,9 @@
 $primary-color: rgb(66, 14, 211);
 $secondary-color: rgb(236, 216, 37);
 
-$oswald-font-family: "Oswald",
-sans-serif;
-$roboto-font-family: "Roboto",
-sans-serif;
-$open-sans-font-family: "Open Sans",
-sans-serif;
+$oswald-font-family: "Oswald", sans-serif;
+$roboto-font-family: "Roboto", sans-serif;
+$open-sans-font-family: "Open Sans", sans-serif;
 
 $button-radius-small: 10px;
 $button-radius-medium: 20px;
@@ -14,7 +11,22 @@ $button-radius-medium: 20px;
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: $roboto-font-family;
+}
+
+body {
+  // font-family: $roboto-font-family;
+  font-family: $open-sans-font-family;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  background: #111;
+}
+
+.reverso {
+  font-family: $oswald-font-family;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $primary-color;
 }
 
 .header {
@@ -85,10 +97,45 @@ $button-radius-medium: 20px;
     border-bottom-right-radius: $button-radius-medium;
     border-bottom: 3px solid $secondary-color;
     cursor: pointer;
-    transition: box-shadow .2s;
+    transition: box-shadow 0.2s;
 
     &:hover {
-      box-shadow: 0 0 50px rgba($secondary-color, .2);
+      box-shadow: 0 0 50px rgba($secondary-color, 0.2);
+    }
+  }
+}
+
+.section {
+  padding: 150px 0;
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    color: $secondary-color;
+    font-family: $oswald-font-family;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-left: 400px;
+    margin-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 0;
+      bottom: 0;
+      width: 7px;
+      background-color: $primary-color;
+      border-bottom: 3px solid $secondary-color;
+    }
+  }
+
+  &__text {
+    padding: 0 400px;
+
+    p {
+      margin-bottom: 20px;
     }
   }
 }
