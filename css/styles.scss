@@ -1,11 +1,15 @@
 $primary-color: rgb(66, 14, 211);
 $secondary-color: rgb(236, 216, 37);
 
-$oswald-font-family: "Oswald", sans-serif;
-$roboto-font-family: "Roboto", sans-serif;
-$open-sans-font-family: "Open Sans", sans-serif;
+$oswald-font-family: "Oswald",
+sans-serif;
+$roboto-font-family: "Roboto",
+sans-serif;
+$open-sans-font-family: "Open Sans",
+sans-serif;
 
-$button-radius: 20px;
+$button-radius-small: 10px;
+$button-radius-medium: 20px;
 
 * {
   margin: 0;
@@ -77,8 +81,14 @@ $button-radius: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: $primary-color;
-    border-top-left-radius: $button-radius;
-    border-bottom-right-radius: $button-radius;
+    border-top-left-radius: $button-radius-medium;
+    border-bottom-right-radius: $button-radius-medium;
     border-bottom: 3px solid $secondary-color;
+    cursor: pointer;
+    transition: box-shadow .2s;
+
+    &:hover {
+      box-shadow: 0 0 50px rgba($secondary-color, .2);
+    }
   }
 }

@@ -76,5 +76,15 @@
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom: 3px solid #ecd825;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .2s;
+  transition: -webkit-box-shadow .2s;
+  transition: box-shadow .2s;
+  transition: box-shadow .2s, -webkit-box-shadow .2s;
+}
+
+.header__order-button:hover {
+  -webkit-box-shadow: 0 0 50px rgba(236, 216, 37, 0.2);
+          box-shadow: 0 0 50px rgba(236, 216, 37, 0.2);
 }
 /*# sourceMappingURL=styles.css.map */
