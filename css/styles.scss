@@ -167,6 +167,8 @@ body {
         top: 0;
         left: -70px;
         width: 60px;
+        filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg)
+          brightness(110%) contrast(85%);
       }
     }
   }
@@ -176,12 +178,5 @@ body {
     color: $secondary-color;
     text-transform: uppercase;
     margin-bottom: 10px;
-  }
-}
-
-.how-we-work {
-  &__plan {
-    filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg)
-      brightness(110%) contrast(85%);
   }
 }
