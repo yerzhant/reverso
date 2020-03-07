@@ -137,6 +137,11 @@ body {
   padding: 0 400px;
 }
 
+.section__text-note {
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
 .section__text p {
   margin-bottom: 20px;
 }

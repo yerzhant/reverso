@@ -140,6 +140,11 @@ body {
   &__text {
     padding: 0 400px;
 
+    &-note {
+      font-size: 0.8em;
+      margin-top: 20px;
+    }
+
     p {
       margin-bottom: 20px;
     }
