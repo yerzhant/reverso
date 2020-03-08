@@ -379,4 +379,104 @@ body {
           box-shadow: 0 0 20px rgba(255, 255, 60, 0.2);
   color: #ffff3c;
 }
+
+.footer {
+  position: relative;
+  background: url(../img/footer-bg.jpg) no-repeat center;
+  padding: 150px 400px;
+}
+
+.footer::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.footer__form {
+  z-index: 10;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__form > * {
+  margin-bottom: 30px;
+}
+
+.footer__form > *:last-child {
+  margin-bottom: 0;
+}
+
+.footer__form-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  color: #ffff3c;
+}
+
+.footer__form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgba(46, 46, 253, 0.2);
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  padding: 10px 0;
+  margin-bottom: -3px;
+  width: 100%;
+}
+
+.footer__form input:focus {
+  border-bottom: 3px solid #ffff3c;
+}
+
+.footer__form-input::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid #ffff3c;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.footer__form-input:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.footer__form-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  background-color: #2e2efd;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+  border-bottom: 3px solid #ffff3c;
+  cursor: pointer;
+  -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, color 0.3s;
+  transition: box-shadow 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.footer__form-button:hover {
+  -webkit-box-shadow: 0 0 50px rgba(255, 255, 60, 0.2);
+          box-shadow: 0 0 50px rgba(255, 255, 60, 0.2);
+  color: #ffff3c;
+}
 /*# sourceMappingURL=styles.css.map */

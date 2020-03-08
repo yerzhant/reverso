@@ -350,3 +350,91 @@ body {
     }
   }
 }
+
+.footer {
+  position: relative;
+  background: url(../img/footer-bg.jpg) no-repeat center;
+  padding: 150px 400px;
+
+  &::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &__form {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-title {
+      font-family: $oswald-font-family;
+      font-size: 26px;
+      color: $secondary-color;
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid rgba($primary-color, 0.2);
+      color: #fff;
+      font-size: 20px;
+      outline: none;
+      padding: 10px 0;
+      margin-bottom: -3px;
+      width: 100%;
+
+      &:focus {
+        border-bottom: 3px solid $secondary-color;
+      }
+    }
+
+    &-input {
+      &::after {
+        display: block;
+        content: "";
+        border-bottom: 3px solid $secondary-color;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &-button {
+      font-family: $oswald-font-family;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 30px;
+      background-color: $primary-color;
+      border-top-left-radius: $button-radius-small;
+      border-bottom-right-radius: $button-radius-medium;
+      border-bottom: 3px solid $secondary-color;
+      cursor: pointer;
+      transition: box-shadow 0.3s, color 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 50px rgba($secondary-color, 0.2);
+        color: $secondary-color;
+      }
+    }
+  }
+}
