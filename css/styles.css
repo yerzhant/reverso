@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #fff;
-  background: #111;
+  background: #131313;
 }
 
 .reverso {
@@ -209,7 +209,7 @@ body {
 }
 
 .main .section:nth-child(even) {
-  background-color: #131313;
+  background-color: #171717;
 }
 
 .section {
@@ -323,7 +323,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 400px;
-  background-color: #151515;
+  background-color: #222222;
   padding: 50px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
