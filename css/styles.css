@@ -91,7 +91,6 @@ body {
   padding: 12px 30px;
   font-family: "Oswald", sans-serif;
   font-size: 22px;
-  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #2e2efd;
@@ -243,7 +242,23 @@ body {
   margin-bottom: 10px;
 }
 
+.section__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .section__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 400px;
   background-color: #151515;
   padding: 50px;
@@ -261,6 +276,16 @@ body {
           box-shadow: 0 0 30px rgba(255, 255, 60, 0.2);
 }
 
+.section__card-desc p {
+  margin-bottom: 10px;
+}
+
+.section__card-desc-note {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #ffff3c;
+}
+
 .section__card-title {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -275,13 +300,20 @@ body {
 }
 
 .section__card-list-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
   color: #ffff3c;
   margin-bottom: 10px;
-  font-size: 18px;
 }
 
 .section__card-list-item {
   margin-bottom: 5px;
+}
+
+.section__card-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .section__card-prices {
@@ -293,11 +325,35 @@ body {
   border-bottom-right-radius: 25px;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .section__card-prices-price {
   font-family: "PT Serif", serif;
   font-size: 26px;
+  color: #ffff3c;
+}
+
+.section__card-button {
+  margin-top: 40px;
+  padding: 10px 0px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #2e2efd;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, color 0.3s;
+  transition: box-shadow 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.section__card-button:hover {
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 60, 0.2);
+          box-shadow: 0 0 20px rgba(255, 255, 60, 0.2);
   color: #ffff3c;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -99,7 +99,6 @@ body {
     padding: 12px 30px;
     font-family: $oswald-font-family;
     font-size: 22px;
-    font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: $primary-color;
@@ -232,7 +231,14 @@ body {
     margin-bottom: 10px;
   }
 
+  &__cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   &__card {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     background-color: #151515;
     padding: 50px;
@@ -243,6 +249,17 @@ body {
 
     &:hover {
       box-shadow: 0 0 30px rgba($secondary-color, 0.2);
+    }
+
+    &-desc {
+      p {
+        margin-bottom: 10px;
+      }
+      &-note {
+        font-family: $roboto-font-family;
+        font-weight: 500;
+        color: $secondary-color;
+      }
     }
 
     &-title {
@@ -258,14 +275,19 @@ body {
       list-style-type: square;
 
       &-title {
+        font-family: $oswald-font-family;
+        font-size: 18px;
         color: $secondary-color;
         margin-bottom: 10px;
-        font-size: 18px;
       }
 
       &-item {
         margin-bottom: 5px;
       }
+    }
+
+    &-spacer {
+      flex-grow: 1;
     }
 
     &-prices {
@@ -277,10 +299,30 @@ body {
       border-bottom-right-radius: $button-radius-medium;
       font-family: $oswald-font-family;
       font-size: 18px;
+      line-height: 1.2;
 
       &-price {
         font-family: $pt-serif;
         font-size: 26px;
+        color: $secondary-color;
+      }
+    }
+
+    &-button {
+      margin-top: 40px;
+      padding: 10px 0px;
+      font-family: $oswald-font-family;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: $primary-color;
+      border-top-left-radius: $button-radius-small;
+      border-bottom-right-radius: $button-radius-medium;
+      cursor: pointer;
+      transition: box-shadow 0.3s, color 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 20px rgba($secondary-color, 0.2);
         color: $secondary-color;
       }
     }
