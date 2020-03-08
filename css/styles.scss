@@ -4,6 +4,7 @@ $secondary-color: #ffff3c;
 $oswald-font-family: "Oswald", sans-serif;
 $roboto-font-family: "Roboto", sans-serif;
 $open-sans-font-family: "Open Sans", sans-serif;
+$pt-serif: "PT Serif", serif;
 
 $button-radius-small: 5px;
 $button-radius-medium: 25px;
@@ -158,7 +159,7 @@ body {
 
 .main {
   .section:nth-child(even) {
-    background-color: #181818;
+    background-color: #131313;
   }
 }
 
@@ -229,5 +230,59 @@ body {
     color: $secondary-color;
     text-transform: uppercase;
     margin-bottom: 10px;
+  }
+
+  &__card {
+    width: 400px;
+    background-color: #151515;
+    padding: 50px;
+    border-top-left-radius: $button-radius-small;
+    border-bottom-right-radius: $button-radius-medium;
+    border-bottom: 3px solid $secondary-color;
+    transition: box-shadow 0.3s, color 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 30px rgba($secondary-color, 0.2);
+    }
+
+    &-title {
+      font-family: $oswald-font-family;
+      text-transform: uppercase;
+      color: $secondary-color;
+      margin-bottom: 30px;
+    }
+
+    &-list {
+      margin-top: 20px;
+      margin-left: -40px;
+      list-style-type: square;
+
+      &-title {
+        color: $secondary-color;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+
+      &-item {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-prices {
+      margin-top: 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba($primary-color, 0.2);
+      border-top-left-radius: $button-radius-small;
+      border-bottom-right-radius: $button-radius-medium;
+      font-family: $oswald-font-family;
+      font-size: 18px;
+
+      &-price {
+        font-family: $pt-serif;
+        font-size: 26px;
+        color: $secondary-color;
+      }
+    }
   }
 }
