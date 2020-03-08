@@ -1,5 +1,5 @@
-$primary-color: rgb(66, 14, 211);
-$secondary-color: rgb(236, 216, 37);
+$primary-color: #2e2efd;
+$secondary-color: #ffff3c;
 
 $oswald-font-family: "Oswald", sans-serif;
 $roboto-font-family: "Roboto", sans-serif;
@@ -27,6 +27,16 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   color: $primary-color;
+
+  &__reverse {
+    display: inline-block;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    transform: rotateY(180deg);
+    // margin-left: -2px;
+    // margin-right: 2px;
+    color: $secondary-color;
+  }
 }
 
 .header {
@@ -120,7 +130,7 @@ body {
     color: $secondary-color;
     font-family: $oswald-font-family;
     font-size: 32px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.1;
     margin-left: 400px;
     margin-bottom: 50px;
@@ -151,7 +161,7 @@ body {
 
     ul {
       list-style: none;
-      padding-left: 90px;
+      padding-left: 80px;
     }
 
     li {
@@ -165,8 +175,8 @@ body {
       img {
         position: absolute;
         top: 0;
-        left: -90px;
-        width: 50px;
+        left: -80px;
+        width: 45px;
         filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg)
           brightness(110%) contrast(85%);
       }

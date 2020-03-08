@@ -16,7 +16,16 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #420ed3;
+  color: #2e2efd;
+}
+
+.reverso__reverse {
+  display: inline-block;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  color: #ffff3c;
 }
 
 .header {
@@ -80,16 +89,16 @@ body {
 .header__order-button {
   display: inline-block;
   padding: 12px 30px;
-  color: #ecd825;
+  color: #ffff3c;
   font-family: "Oswald", sans-serif;
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background-color: #420ed3;
+  background-color: #2e2efd;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom: 3px solid #ecd825;
+  border-bottom: 3px solid #ffff3c;
   cursor: pointer;
   -webkit-transition: -webkit-box-shadow 0.2s;
   transition: -webkit-box-shadow 0.2s;
@@ -98,8 +107,8 @@ body {
 }
 
 .header__order-button:hover {
-  -webkit-box-shadow: 0 0 50px rgba(236, 216, 37, 0.2);
-          box-shadow: 0 0 50px rgba(236, 216, 37, 0.2);
+  -webkit-box-shadow: 0 0 50px rgba(255, 255, 60, 0.2);
+          box-shadow: 0 0 50px rgba(255, 255, 60, 0.2);
 }
 
 .main .section:nth-child(even) {
@@ -113,10 +122,10 @@ body {
 .section__title {
   position: relative;
   display: inline-block;
-  color: #ecd825;
+  color: #ffff3c;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.1;
   margin-left: 400px;
   margin-bottom: 50px;
@@ -129,8 +138,8 @@ body {
   top: 0;
   bottom: 0;
   width: 7px;
-  background-color: #420ed3;
-  border-bottom: 3px solid #ecd825;
+  background-color: #2e2efd;
+  border-bottom: 3px solid #ffff3c;
 }
 
 .section__text {
@@ -148,7 +157,7 @@ body {
 
 .section__text ul {
   list-style: none;
-  padding-left: 90px;
+  padding-left: 80px;
 }
 
 .section__text li {
@@ -163,15 +172,15 @@ body {
 .section__text li img {
   position: absolute;
   top: 0;
-  left: -90px;
-  width: 50px;
+  left: -80px;
+  width: 45px;
   -webkit-filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
           filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
 }
 
 .section__list-item-title {
   font-family: "Oswald", sans-serif;
-  color: #ecd825;
+  color: #ffff3c;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
