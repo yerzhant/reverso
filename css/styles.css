@@ -28,6 +28,36 @@ body {
   color: #ffff3c;
 }
 
+@-webkit-keyframes logo {
+  0% {
+    -webkit-filter: drop-shadow(0 0 2px white);
+            filter: drop-shadow(0 0 2px white);
+  }
+  80% {
+    -webkit-filter: drop-shadow(0 0 100px white);
+            filter: drop-shadow(0 0 100px white);
+  }
+  100% {
+    -webkit-filter: drop-shadow(0 0 2px white);
+            filter: drop-shadow(0 0 2px white);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-filter: drop-shadow(0 0 2px white);
+            filter: drop-shadow(0 0 2px white);
+  }
+  80% {
+    -webkit-filter: drop-shadow(0 0 100px white);
+            filter: drop-shadow(0 0 100px white);
+  }
+  100% {
+    -webkit-filter: drop-shadow(0 0 2px white);
+            filter: drop-shadow(0 0 2px white);
+  }
+}
+
 .header {
   position: relative;
   display: -webkit-box;
@@ -63,6 +93,8 @@ body {
   width: 450px;
   -webkit-filter: drop-shadow(0 0 2px white);
           filter: drop-shadow(0 0 2px white);
+  -webkit-animation: logo 5s 2s;
+          animation: logo 5s 2s;
 }
 
 .header__center {

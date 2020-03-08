@@ -40,6 +40,18 @@ body {
   }
 }
 
+@keyframes logo {
+  0% {
+    filter: drop-shadow(0 0 2px white);
+  }
+  80% {
+    filter: drop-shadow(0 0 100px white);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px white);
+  }
+}
+
 .header {
   position: relative;
   display: flex;
@@ -67,6 +79,7 @@ body {
     top: 0;
     width: 450px;
     filter: drop-shadow(0 0 2px white);
+    animation: logo 5s 2s;
 
     // &_white {
     //   filter: drop-shadow(0 0 5px $secondary-color);
