@@ -196,6 +196,28 @@ body {
       margin-top: 20px;
     }
 
+    &-contact {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-family: $oswald-font-family;
+      font-size: 24px;
+      transition: color 0.3s;
+
+      &:first-child {
+        font-family: $pt-serif;
+      }
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &-address {
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+
     p {
       margin-bottom: 20px;
     }
