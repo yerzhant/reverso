@@ -151,7 +151,7 @@ body {
 
     ul {
       list-style: none;
-      padding-left: 70px;
+      padding-left: 90px;
     }
 
     li {
@@ -165,8 +165,8 @@ body {
       img {
         position: absolute;
         top: 0;
-        left: -70px;
-        width: 60px;
+        left: -90px;
+        width: 50px;
         filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg)
           brightness(110%) contrast(85%);
       }
