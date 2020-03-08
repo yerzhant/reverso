@@ -5,8 +5,8 @@ $oswald-font-family: "Oswald", sans-serif;
 $roboto-font-family: "Roboto", sans-serif;
 $open-sans-font-family: "Open Sans", sans-serif;
 
-$button-radius-small: 10px;
-$button-radius-medium: 20px;
+$button-radius-small: 5px;
+$button-radius-medium: 25px;
 
 * {
   margin: 0;
@@ -96,21 +96,21 @@ body {
   &__order-button {
     display: inline-block;
     padding: 12px 30px;
-    color: $secondary-color;
     font-family: $oswald-font-family;
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: $primary-color;
-    border-top-left-radius: $button-radius-medium;
+    border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
     border-bottom: 3px solid $secondary-color;
     cursor: pointer;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.3s, color 0.3s;
 
     &:hover {
       box-shadow: 0 0 50px rgba($secondary-color, 0.2);
+      color: $secondary-color;
     }
   }
 
