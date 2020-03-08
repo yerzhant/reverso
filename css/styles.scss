@@ -44,8 +44,11 @@ body {
   0% {
     filter: drop-shadow(0 0 2px white);
   }
-  80% {
+  70% {
     filter: drop-shadow(0 0 100px white);
+  }
+  71% {
+    filter: drop-shadow(0 0 500px white);
   }
   100% {
     filter: drop-shadow(0 0 2px white);
@@ -79,7 +82,7 @@ body {
     top: 0;
     width: 450px;
     filter: drop-shadow(0 0 2px white);
-    animation: logo 3s 2s;
+    animation: logo 5s 2s ease-in-out;
 
     // &_white {
     //   filter: drop-shadow(0 0 5px $secondary-color);
