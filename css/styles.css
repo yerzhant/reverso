@@ -93,8 +93,8 @@ body {
   width: 450px;
   -webkit-filter: drop-shadow(0 0 2px white);
           filter: drop-shadow(0 0 2px white);
-  -webkit-animation: logo 5s 2s;
-          animation: logo 5s 2s;
+  -webkit-animation: logo 3s 2s;
+          animation: logo 3s 2s;
 }
 
 .header__center {
@@ -414,7 +414,7 @@ body {
 
 .footer {
   position: relative;
-  background: url(../img/footer-bg.jpg) no-repeat center;
+  background: url(../img/footer-bg.jpg) no-repeat center -1300px;
   padding: 150px 400px;
 }
 
