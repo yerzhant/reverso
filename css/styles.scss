@@ -47,7 +47,7 @@ body {
   70% {
     filter: drop-shadow(0 0 100px white);
   }
-  71% {
+  75% {
     filter: drop-shadow(0 0 500px white);
   }
   100% {
@@ -436,7 +436,6 @@ body {
     &-button {
       font-family: $oswald-font-family;
       font-size: 18px;
-      letter-spacing: 1px;
       text-align: center;
       padding: 10px 0;
       margin-top: 30px;
@@ -448,7 +447,7 @@ body {
       transition: box-shadow 0.3s, color 0.3s;
 
       &:hover {
-        box-shadow: 0 0 50px rgba($secondary-color, 0.2);
+        box-shadow: 0 0 30px rgba($secondary-color, 0.1);
         color: $secondary-color;
       }
     }
