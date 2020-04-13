@@ -9,3 +9,5 @@
 - Add og tags for sharing.
 
 - Remove unused fonts.
+
+- Try radial gradient bg in sections

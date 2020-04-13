@@ -15,8 +15,17 @@ $(document).ready(() => {
 function scrollToSelector(selector) {
   $("html, body").animate(
     {
-      scrollTop: $(selector).offset().top
+      scrollTop: $(selector).offset().top,
     },
     1000
   );
 }
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    autoHeight: true,
+    animateOut: "slideOutDown",
+    animateIn: "flipInX",
+  });
+});
