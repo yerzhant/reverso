@@ -420,6 +420,33 @@ body {
   color: #ffff3c;
 }
 
+.carousel-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  width: 554px;
+}
+
+.carousel-nav__link {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.carousel-nav__link:last-child {
+  margin-right: 0;
+}
+
+.carousel-nav img {
+  display: block;
+  width: 80px;
+}
+
 .footer {
   position: relative;
   background: url(../img/footer-bg.jpg) no-repeat center -1300px;

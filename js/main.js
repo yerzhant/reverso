@@ -24,6 +24,7 @@ function scrollToSelector(selector) {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 1,
+    dots: false,
     autoHeight: true,
     animateOut: "slideOutDown",
     animateIn: "flipInX",

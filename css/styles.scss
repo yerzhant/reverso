@@ -1,10 +1,14 @@
 $primary-color: #2e2efd;
 $secondary-color: #ffff3c;
 
-$oswald-font-family: "Oswald", sans-serif;
-$roboto-font-family: "Roboto", sans-serif;
-$open-sans-font-family: "Open Sans", sans-serif;
-$pt-serif: "PT Serif", serif;
+$oswald-font-family: "Oswald",
+sans-serif;
+$roboto-font-family: "Roboto",
+sans-serif;
+$open-sans-font-family: "Open Sans",
+sans-serif;
+$pt-serif: "PT Serif",
+serif;
 
 $button-radius-small: 5px;
 $button-radius-medium: 25px;
@@ -44,12 +48,15 @@ body {
   0% {
     filter: drop-shadow(0 0 2px white);
   }
+
   70% {
     filter: drop-shadow(0 0 100px white);
   }
+
   75% {
     filter: drop-shadow(0 0 500px white);
   }
+
   100% {
     filter: drop-shadow(0 0 2px white);
   }
@@ -165,8 +172,7 @@ body {
     &-icon {
       width: 40px;
       margin-bottom: 10px;
-      filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg)
-        brightness(110%) contrast(85%);
+      filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
       transition: box-shadow 0.3s;
     }
   }
@@ -256,8 +262,7 @@ body {
         top: 0;
         left: -80px;
         width: 45px;
-        filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg)
-          brightness(110%) contrast(85%);
+        filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
       }
     }
   }
@@ -293,6 +298,7 @@ body {
       p {
         margin-bottom: 10px;
       }
+
       &-note {
         font-family: $roboto-font-family;
         font-weight: 500;
@@ -367,6 +373,28 @@ body {
   }
 }
 
+.carousel-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  width: 554px;
+
+  &__link {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  img {
+    display: block;
+    width: 80px;
+  }
+}
+
 .footer {
   position: relative;
   background: url(../img/footer-bg.jpg) no-repeat center -1300px;
@@ -389,7 +417,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    > * {
+    >* {
       margin-bottom: 30px;
 
       &:last-child {
