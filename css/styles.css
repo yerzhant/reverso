@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #fff;
+  color: #999;
   background: #131313;
 }
 
@@ -420,6 +420,40 @@ body {
   color: #ffff3c;
 }
 
+.section__divider {
+  margin: 60px 0 70px;
+  height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, rgba(46, 46, 253, 0.3)), to(transparent));
+  background: linear-gradient(to left, transparent 0%, rgba(46, 46, 253, 0.3) 50%, transparent 100%);
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel:nth-child(3), .carousel:nth-child(7) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.carousel:nth-child(3) .carousel__desc, .carousel:nth-child(7) .carousel__desc {
+  padding-right: 50px;
+  padding-left: 0;
+}
+
+.carousel__images {
+  width: 60%;
+}
+
+.carousel__desc {
+  width: 40%;
+  padding-left: 50px;
+}
+
 .carousel-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +464,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
-  width: 554px;
 }
 
 .carousel-nav__link {
@@ -445,6 +478,9 @@ body {
 .carousel-nav img {
   display: block;
   width: 80px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {

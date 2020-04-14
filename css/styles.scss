@@ -23,7 +23,7 @@ body {
   font-family: $open-sans-font-family;
   font-size: 16px;
   line-height: 1.6;
-  color: #fff;
+  color: #999;
   background: #131313;
 }
 
@@ -371,27 +371,62 @@ body {
       }
     }
   }
+
+  &__divider {
+    margin: 60px 0 70px;
+    height: 1px;
+    background: linear-gradient(to left,
+        transparent 0%,
+        rgba($color: $primary-color, $alpha: 0.3) 50%,
+        transparent 100%);
+  }
 }
 
-.carousel-nav {
+.carousel {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 20px;
-  width: 554px;
 
-  &__link {
-    margin-right: 10px;
-    margin-bottom: 10px;
+  &:nth-child(3),
+  &:nth-child(7) {
+    flex-direction: row-reverse;
 
-    &:last-child {
-      margin-right: 0;
+    .carousel {
+      &__desc {
+        padding-right: 50px;
+        padding-left: 0;
+      }
     }
   }
 
-  img {
-    display: block;
-    width: 80px;
+  &__images {
+    width: 60%;
+  }
+
+  &__desc {
+    width: 40%;
+    padding-left: 50px;
+  }
+
+  &-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+
+    &__link {
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      display: block;
+      width: 80px;
+      height: 50px;
+      object-fit: cover;
+    }
   }
 }
 
