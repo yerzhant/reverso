@@ -124,15 +124,15 @@ body {
     font-size: 22px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background-color: $primary-color;
+    background: linear-gradient(to right, $primary-color, darken($primary-color, 35%));
     border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
-    border-bottom: 3px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
     cursor: pointer;
     transition: box-shadow 0.3s, color 0.3s;
 
     &:hover {
-      box-shadow: 0 0 50px rgba($secondary-color, 0.2);
+      box-shadow: 0 0 50px rgba($secondary-color, 0.1);
       color: $secondary-color;
     }
   }
@@ -204,9 +204,9 @@ body {
       left: -30px;
       top: 0;
       bottom: 0;
-      width: 7px;
-      background-color: $primary-color;
-      border-bottom: 3px solid $secondary-color;
+      width: 4px;
+      background: linear-gradient(to top, $primary-color, darken($primary-color, 40%));
+      border-bottom: 2px solid $secondary-color;
     }
   }
 
@@ -287,11 +287,11 @@ body {
     padding: 50px;
     border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
-    border-bottom: 3px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
     transition: box-shadow 0.3s, color 0.3s;
 
     &:hover {
-      box-shadow: 0 0 30px rgba($secondary-color, 0.2);
+      box-shadow: 0 0 30px rgba($secondary-color, 0.1);
     }
 
     &-desc {
@@ -359,14 +359,15 @@ body {
       font-size: 18px;
       text-transform: uppercase;
       text-align: center;
-      background-color: $primary-color;
+      color: #fff;
+      background: linear-gradient(to right, $primary-color, darken($primary-color, 35%));
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
       cursor: pointer;
       transition: box-shadow 0.3s, color 0.3s;
 
       &:hover {
-        box-shadow: 0 0 20px rgba($secondary-color, 0.2);
+        box-shadow: 0 0 20px rgba($secondary-color, 0.1);
         color: $secondary-color;
       }
     }
@@ -502,10 +503,11 @@ body {
       text-align: center;
       padding: 10px 0;
       margin-top: 30px;
-      background-color: $primary-color;
+      color: #fff;
+      background: linear-gradient(to right, $primary-color, darken($primary-color, 35%));
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
-      border-bottom: 3px solid $secondary-color;
+      border-bottom: 1px solid $secondary-color;
       cursor: pointer;
       transition: box-shadow 0.3s, color 0.3s;
 
