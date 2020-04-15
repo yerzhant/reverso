@@ -294,7 +294,7 @@ body {
 
 @media (max-width: 1000px) {
   .section__title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 40px;
   }
 }
