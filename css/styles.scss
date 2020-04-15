@@ -1,9 +1,6 @@
-// $primary-color: #2e2efd;
-// $secondary-color: #ffff3c;
 $primary-color: #2D7DD2;
 $secondary-color: #EEB902;
 $secondary-color-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
-;
 
 $oswald-font-family: "Oswald",
 sans-serif;
@@ -95,16 +92,13 @@ body {
   &__logo {
     z-index: 10;
     position: absolute;
-    top: 0;
-    width: 450px;
+    top: 120px;
+    width: 250px;
     filter: drop-shadow(0 0 2px white);
-    animation: logo 3s 2s ease-in-out;
+    animation: logo 2s 1s ease-in-out;
 
-    // &_white {
-    //   filter: drop-shadow(0 0 5px $secondary-color);
-    // }
     @media (max-width: $xs-break-point) {
-      width: 250px;
+      width: 100px;
     }
   }
 

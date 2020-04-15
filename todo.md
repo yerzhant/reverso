@@ -2,8 +2,6 @@
 
 - Remove unused files.
 
-- Removed commented stuff from index and styles files.
-
 - Add meta tags for SEO.
 
 - Add og tags for sharing.
