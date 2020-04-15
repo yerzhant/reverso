@@ -7,8 +7,6 @@ $secondary-color-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg)
 
 $oswald-font-family: "Oswald",
 sans-serif;
-$roboto-font-family: "Roboto",
-sans-serif;
 $open-sans-font-family: "Open Sans",
 sans-serif;
 $pt-serif: "PT Serif",
@@ -27,7 +25,6 @@ $xs-break-point: 1000px;
 }
 
 body {
-  // font-family: $roboto-font-family;
   font-family: $open-sans-font-family;
   font-size: 16px;
   line-height: 1.6;
@@ -424,7 +421,6 @@ body {
       }
 
       &-note {
-        font-family: $roboto-font-family;
         font-weight: 500;
         color: $secondary-color;
       }
