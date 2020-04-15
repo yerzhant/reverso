@@ -1,5 +1,9 @@
-$primary-color: #2e2efd;
-$secondary-color: #ffff3c;
+// $primary-color: #2e2efd;
+// $secondary-color: #ffff3c;
+$primary-color: #2D7DD2;
+$secondary-color: #EEB902;
+$secondary-color-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
+;
 
 $oswald-font-family: "Oswald",
 sans-serif;
@@ -29,6 +33,10 @@ body {
   line-height: 1.6;
   color: #999;
   background: #131313;
+
+  @media (max-width: $xs-break-point) {
+    line-height: 1.4;
+  }
 }
 
 .reverso {
@@ -201,7 +209,7 @@ body {
     &-icon {
       width: 40px;
       margin-bottom: 10px;
-      filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+      filter: $secondary-color-filter;
       transition: box-shadow 0.3s;
 
       @media (max-width: $xs-break-point) {
@@ -295,7 +303,7 @@ body {
         color: $secondary-color;
 
         img {
-          filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+          filter: $secondary-color-filter;
         }
       }
 
@@ -348,7 +356,7 @@ body {
         top: 0;
         left: -80px;
         width: 45px;
-        filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+        filter: $secondary-color-filter;
 
         @media (max-width: $xs-break-point) {
           width: 20px;
