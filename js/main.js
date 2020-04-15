@@ -28,10 +28,5 @@ $(document).ready(function () {
     autoHeight: true,
     animateOut: "slideOutDown",
     animateIn: "flipInX",
-    responsive: {
-      0: {
-        items: 1,
-      },
-    },
   });
 });

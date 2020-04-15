@@ -13,6 +13,10 @@ serif;
 $button-radius-small: 5px;
 $button-radius-medium: 25px;
 
+$md-break-point: 1600px;
+$sm-break-point: 1300px;
+$xs-break-point: 1000px;
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -94,6 +98,9 @@ body {
     // &_white {
     //   filter: drop-shadow(0 0 5px $secondary-color);
     // }
+    @media (max-width: $xs-break-point) {
+      width: 250px;
+    }
   }
 
   &__center {
@@ -107,6 +114,11 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
+
+    @media (max-width: $xs-break-point) {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
   }
 
   &__subtitle {
@@ -115,6 +127,11 @@ body {
     letter-spacing: 1px;
     margin-top: 20px;
     margin-bottom: 100px;
+
+    @media (max-width: $xs-break-point) {
+      font-size: 16px;
+
+    }
   }
 
   &__order-button {
@@ -135,6 +152,10 @@ body {
       box-shadow: 0 0 50px rgba($secondary-color, 0.1);
       color: $secondary-color;
     }
+
+    @media (max-width: $xs-break-point) {
+      font-size: 16px;
+    }
   }
 
   &__bottom {
@@ -149,6 +170,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
 
+    @media (max-width: $xs-break-point) {
+      height: 70px;
+    }
+
     &-link {
       display: flex;
       flex-direction: column;
@@ -158,6 +183,10 @@ body {
       cursor: pointer;
       width: 200px;
       transition: color 0.3s;
+
+      @media (max-width: $xs-break-point) {
+        font-size: 12px;
+      }
 
       &:hover {
         color: $secondary-color;
@@ -174,6 +203,11 @@ body {
       margin-bottom: 10px;
       filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
       transition: box-shadow 0.3s;
+
+      @media (max-width: $xs-break-point) {
+        width: 24px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -187,6 +221,15 @@ body {
 .section {
   padding: 150px 0;
 
+  @media (max-width: $md-break-point) {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  @media (max-width: $xs-break-point) {
+    padding: 60px 30px;
+  }
+
   &__title {
     position: relative;
     display: inline-block;
@@ -198,6 +241,15 @@ body {
     margin-left: 400px;
     margin-bottom: 50px;
 
+    @media (max-width: $md-break-point) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $xs-break-point) {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -207,11 +259,20 @@ body {
       width: 4px;
       background: linear-gradient(to top, $primary-color, darken($primary-color, 40%));
       border-bottom: 2px solid $secondary-color;
+
+      @media (max-width: $xs-break-point) {
+        left: -15px;
+        width: 3px;
+      }
     }
   }
 
   &__text {
     padding: 0 400px;
+
+    @media (max-width: $md-break-point) {
+      padding: 0;
+    }
 
     &-note {
       font-size: 0.8em;
@@ -232,12 +293,29 @@ body {
 
       &:hover {
         color: $secondary-color;
+
+        img {
+          filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+        }
+      }
+
+      img {
+        width: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
       }
     }
 
     &-address {
       margin-top: 30px;
       font-size: 0.9em;
+
+      img {
+        width: 15px;
+        vertical-align: middle;
+        filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(89%) contrast(94%);
+      }
     }
 
     p {
@@ -247,11 +325,19 @@ body {
     ul {
       list-style: none;
       padding-left: 80px;
+
+      @media (max-width: $xs-break-point) {
+        padding-left: 30px;
+      }
     }
 
     li {
       position: relative;
       margin-bottom: 40px;
+
+      @media (max-width: $xs-break-point) {
+        margin-bottom: 25px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -263,6 +349,12 @@ body {
         left: -80px;
         width: 45px;
         filter: invert(70%) sepia(99%) saturate(397%) hue-rotate(3deg) brightness(110%) contrast(85%);
+
+        @media (max-width: $xs-break-point) {
+          width: 20px;
+          left: -30px;
+          top: 5px;
+        }
       }
     }
   }
@@ -277,6 +369,17 @@ body {
   &__cards {
     display: flex;
     justify-content: space-evenly;
+
+    @media (max-width: $md-break-point) {
+      margin-right: -200px;
+      margin-left: -200px;
+    }
+
+    @media (max-width: $sm-break-point) {
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__card {
@@ -289,6 +392,19 @@ body {
     border-bottom-right-radius: $button-radius-medium;
     border-bottom: 1px solid $secondary-color;
     transition: box-shadow 0.3s, color 0.3s;
+
+    @media (max-width: $sm-break-point) {
+      width: 100%;
+      margin-bottom: 70px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: $xs-break-point) {
+      padding: 30px;
+    }
 
     &:hover {
       box-shadow: 0 0 30px rgba($secondary-color, 0.1);
@@ -311,6 +427,11 @@ body {
       text-transform: uppercase;
       color: $secondary-color;
       margin-bottom: 30px;
+
+      @media (max-width: $xs-break-point) {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
     }
 
     &-list {
@@ -345,10 +466,19 @@ body {
       font-size: 18px;
       line-height: 1.2;
 
+      @media (max-width: $xs-break-point) {
+        padding: 10px;
+        font-size: 16px;
+      }
+
       &-price {
         font-family: $pt-serif;
         font-size: 26px;
         color: $secondary-color;
+
+        @media (max-width: $xs-break-point) {
+          font-size: 22px;
+        }
       }
     }
 
@@ -366,6 +496,11 @@ body {
       cursor: pointer;
       transition: box-shadow 0.3s, color 0.3s;
 
+      @media (max-width: $xs-break-point) {
+        margin-top: 30px;
+        font-size: 16px;
+      }
+
       &:hover {
         box-shadow: 0 0 20px rgba($secondary-color, 0.1);
         color: $secondary-color;
@@ -380,6 +515,14 @@ body {
         transparent 0%,
         rgba($color: $primary-color, $alpha: 0.3) 50%,
         transparent 100%);
+
+    @media (max-width: $sm-break-point) {
+      margin: 60px 0;
+    }
+
+    @media (max-width: $xs-break-point) {
+      margin: 40px 0;
+    }
   }
 }
 
@@ -394,6 +537,27 @@ body {
       &__desc {
         padding-right: 50px;
         padding-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: $sm-break-point) {
+    flex-direction: column-reverse;
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      flex-direction: column-reverse;
+    }
+
+    .carousel {
+      &__images {
+        width: 100%;
+      }
+
+      &__desc {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
       }
     }
   }
@@ -436,6 +600,14 @@ body {
   background: url(../img/footer-bg.jpg) no-repeat center -1300px;
   padding: 150px 400px;
 
+  @media (max-width: $sm-break-point) {
+    padding: 150px 200px;
+  }
+
+  @media (max-width: $xs-break-point) {
+    padding: 80px 30px;
+  }
+
   &::after {
     content: "";
     z-index: 1;
@@ -465,6 +637,10 @@ body {
       font-family: $oswald-font-family;
       font-size: 26px;
       color: $secondary-color;
+
+      @media (max-width: $xs-break-point) {
+        font-size: 20px;
+      }
     }
 
     input {
@@ -477,6 +653,10 @@ body {
       padding: 10px 0;
       margin-bottom: -3px;
       width: 100%;
+
+      @media (max-width: $xs-break-point) {
+        font-size: 16px;
+      }
 
       &:focus {
         border-bottom: 3px solid $secondary-color;
@@ -510,6 +690,10 @@ body {
       border-bottom: 1px solid $secondary-color;
       cursor: pointer;
       transition: box-shadow 0.3s, color 0.3s;
+
+      @media (max-width: $xs-break-point) {
+        font-size: 16px;
+      }
 
       &:hover {
         box-shadow: 0 0 30px rgba($secondary-color, 0.1);
