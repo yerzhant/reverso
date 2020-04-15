@@ -22,7 +22,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #2D7DD2;
+  color: #2d7dd2;
 }
 
 .reverso__reverse {
@@ -31,7 +31,7 @@ body {
   unicode-bidi: bidi-override;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  color: #EEB902;
+  color: #eeb902;
 }
 
 @-webkit-keyframes logo {
@@ -158,11 +158,11 @@ body {
   font-size: 22px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, right top, from(#2D7DD2), to(#0e263f));
-  background: linear-gradient(to right, #2D7DD2, #0e263f);
+  background: -webkit-gradient(linear, left top, right top, from(#2d7dd2), to(#0e263f));
+  background: linear-gradient(to right, #2d7dd2, #0e263f);
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
-  border-bottom: 1px solid #EEB902;
+  border-bottom: 1px solid #eeb902;
   cursor: pointer;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
@@ -173,7 +173,7 @@ body {
 .header__order-button:hover {
   -webkit-box-shadow: 0 0 50px rgba(238, 185, 2, 0.1);
           box-shadow: 0 0 50px rgba(238, 185, 2, 0.1);
-  color: #EEB902;
+  color: #eeb902;
 }
 
 @media (max-width: 1000px) {
@@ -233,7 +233,7 @@ body {
 }
 
 .header__bottom-link:hover {
-  color: #EEB902;
+  color: #eeb902;
 }
 
 .header__bottom-link:hover .header__bottom-icon {
@@ -283,7 +283,7 @@ body {
 .section__title {
   position: relative;
   display: inline-block;
-  color: #EEB902;
+  color: #eeb902;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
   letter-spacing: 1px;
@@ -312,9 +312,9 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2D7DD2), to(#09192a));
-  background: linear-gradient(to top, #2D7DD2, #09192a);
-  border-bottom: 2px solid #EEB902;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2d7dd2), to(#09192a));
+  background: linear-gradient(to top, #2d7dd2, #09192a);
+  border-bottom: 2px solid #eeb902;
 }
 
 @media (max-width: 1000px) {
@@ -354,7 +354,7 @@ body {
 }
 
 .section__text-contact:hover {
-  color: #EEB902;
+  color: #eeb902;
 }
 
 .section__text-contact:hover img {
@@ -431,7 +431,7 @@ body {
 
 .section__list-item-title {
   font-family: "Oswald", sans-serif;
-  color: #EEB902;
+  color: #eeb902;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -478,7 +478,7 @@ body {
   padding: 50px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
-  border-bottom: 1px solid #EEB902;
+  border-bottom: 1px solid #eeb902;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s, color 0.3s;
@@ -512,13 +512,13 @@ body {
 
 .section__card-desc-note {
   font-weight: 500;
-  color: #EEB902;
+  color: #eeb902;
 }
 
 .section__card-title {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  color: #EEB902;
+  color: #eeb902;
   margin-bottom: 30px;
 }
 
@@ -538,7 +538,7 @@ body {
 .section__card-list-title {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
-  color: #EEB902;
+  color: #eeb902;
   margin-bottom: 10px;
 }
 
@@ -574,7 +574,7 @@ body {
 .section__card-prices-price {
   font-family: "PT Serif", serif;
   font-size: 26px;
-  color: #EEB902;
+  color: #eeb902;
 }
 
 @media (max-width: 1000px) {
@@ -591,8 +591,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#2D7DD2), to(#0e263f));
-  background: linear-gradient(to right, #2D7DD2, #0e263f);
+  background: -webkit-gradient(linear, left top, right top, from(#2d7dd2), to(#0e263f));
+  background: linear-gradient(to right, #2d7dd2, #0e263f);
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
   cursor: pointer;
@@ -612,7 +612,7 @@ body {
 .section__card-button:hover {
   -webkit-box-shadow: 0 0 20px rgba(238, 185, 2, 0.1);
           box-shadow: 0 0 20px rgba(238, 185, 2, 0.1);
-  color: #EEB902;
+  color: #eeb902;
 }
 
 .section__divider {
@@ -771,7 +771,7 @@ body {
 .footer__form-title {
   font-family: "Oswald", sans-serif;
   font-size: 26px;
-  color: #EEB902;
+  color: #eeb902;
 }
 
 @media (max-width: 1000px) {
@@ -799,13 +799,13 @@ body {
 }
 
 .footer__form input:focus {
-  border-bottom: 3px solid #EEB902;
+  border-bottom: 3px solid #eeb902;
 }
 
 .footer__form-input::after {
   display: block;
   content: "";
-  border-bottom: 3px solid #EEB902;
+  border-bottom: 3px solid #eeb902;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -826,11 +826,11 @@ body {
   padding: 10px 0;
   margin-top: 30px;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#2D7DD2), to(#0e263f));
-  background: linear-gradient(to right, #2D7DD2, #0e263f);
+  background: -webkit-gradient(linear, left top, right top, from(#2d7dd2), to(#0e263f));
+  background: linear-gradient(to right, #2d7dd2, #0e263f);
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
-  border-bottom: 1px solid #EEB902;
+  border-bottom: 1px solid #eeb902;
   cursor: pointer;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
@@ -847,6 +847,6 @@ body {
 .footer__form-button:hover {
   -webkit-box-shadow: 0 0 30px rgba(238, 185, 2, 0.1);
           box-shadow: 0 0 30px rgba(238, 185, 2, 0.1);
-  color: #EEB902;
+  color: #eeb902;
 }
 /*# sourceMappingURL=styles.css.map */
