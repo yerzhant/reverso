@@ -714,6 +714,12 @@ body {
      object-fit: cover;
 }
 
+@media (max-width: 1000px) {
+  .carousel-nav img {
+    width: 70px;
+  }
+}
+
 .footer {
   position: relative;
   background: url(../img/footer-bg.jpg) no-repeat center -1300px;
