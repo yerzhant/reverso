@@ -3,12 +3,15 @@ $(document).ready(() => {
     ".header__order-button, .header__bottom-link_contacts, .section__card-button_order"
   ).click(() => {
     scrollToSelector("#contacts");
+    return false;
   });
   $(".header__bottom-link_portfolio").click(() => {
     scrollToSelector("#portfolio");
+    return false;
   });
   $(".header__bottom-link_prices").click(() => {
     scrollToSelector("#prices");
+    return false;
   });
 });
 
