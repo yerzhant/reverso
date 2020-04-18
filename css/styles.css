@@ -104,7 +104,7 @@ body {
   z-index: 10;
   position: absolute;
   top: 12%;
-  width: 250px;
+  width: 200px;
   -webkit-filter: drop-shadow(0 0 2px white);
           filter: drop-shadow(0 0 2px white);
   -webkit-animation: logo 2s 1s ease-in-out;
@@ -113,8 +113,13 @@ body {
 
 @media (max-width: 1000px) {
   .header__logo {
-    width: 100px;
+    width: 150px;
   }
+}
+
+.header__logo_white {
+  -webkit-filter: drop-shadow(0 0 2px #2d7dd2);
+          filter: drop-shadow(0 0 2px #2d7dd2);
 }
 
 .header__center {

@@ -95,12 +95,16 @@ body {
     z-index: 10;
     position: absolute;
     top: 12%;
-    width: 250px;
+    width: 200px;
     filter: drop-shadow(0 0 2px white);
     animation: logo 2s 1s ease-in-out;
 
     @media (max-width: $xs-break-point) {
-      width: 100px;
+      width: 150px;
+    }
+
+    &_white {
+      filter: drop-shadow(0 0 2px $primary-color);
     }
   }
 
