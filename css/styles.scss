@@ -288,6 +288,10 @@ body {
       font-size: 24px;
       transition: color 0.3s;
 
+      @media (max-width: $xs-break-point) {
+        font-size: 20px;
+      }
+
       &:first-child {
         font-family: $pt-serif;
       }
@@ -305,11 +309,24 @@ body {
         vertical-align: middle;
         margin-right: 10px;
         filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
+
+        @media (max-width: $xs-break-point) {
+          width: 16px;
+        }
+      }
+
+      &_phone {
+        font-weight: bold;
       }
 
       &_instagram {
         img {
+          margin-left: 1px;
           width: 18px;
+
+          @media (max-width: $xs-break-point) {
+            width: 14px;
+          }
         }
       }
     }

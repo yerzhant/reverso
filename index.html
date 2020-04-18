@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700|PT+Serif:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
@@ -427,9 +427,9 @@
         <h2 class="section__title">КОНТАКТЫ</h2>
       </div>
       <article class="section__text">
-        <a href="tel:+77011770504" class="section__text-contact">
+        <a href="tel:+77011770504" class="section__text-contact section__text-contact_phone">
           <img src="img/icons/phone.svg" alt="Phone">
-          <strong>+7 (701) 177 0504</strong>
+          +7 (701) 177 0504
         </a>
         <a href="mailto:reversoint@gmail.com" class="section__text-contact">
           <img src="img/icons/email.svg" alt="EMail">
@@ -452,8 +452,10 @@
     <form action="/mail.php" class="footer__form" method="POST">
       <div class="footer__form-title">Или оставьте нам Ваши координаты, чтобы мы могли с Вами связаться:</div>
       <div class="footer__form-input"><input type="text" placeholder="Имя" name="name"></div>
-      <div class="footer__form-input"><input type="text" placeholder="Телефон" name="phone"></div>
-      <div class="footer__form-input"><input type="text" placeholder="Электронная почта" name="email"></div>
+      <div class="footer__form-input"><input type="text" placeholder="Телефон" name="phone" type="tel"></div>
+      <div class="footer__form-input">
+        <input type="text" placeholder="Электронная почта" name="email" type="email">
+      </div>
       <button class="footer__form-button" type="submit">ОТПРАВИТЬ</button>
     </form>
   </footer>

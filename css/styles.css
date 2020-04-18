@@ -347,6 +347,12 @@ body {
   transition: color 0.3s;
 }
 
+@media (max-width: 1000px) {
+  .section__text-contact {
+    font-size: 20px;
+  }
+}
+
 .section__text-contact:first-child {
   font-family: "PT Serif", serif;
 }
@@ -368,8 +374,25 @@ body {
           filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
 }
 
+@media (max-width: 1000px) {
+  .section__text-contact img {
+    width: 16px;
+  }
+}
+
+.section__text-contact_phone {
+  font-weight: bold;
+}
+
 .section__text-contact_instagram img {
+  margin-left: 1px;
   width: 18px;
+}
+
+@media (max-width: 1000px) {
+  .section__text-contact_instagram img {
+    width: 14px;
+  }
 }
 
 .section__text-address {
