@@ -698,6 +698,7 @@ body {
       background: linear-gradient(to right,
           $primary-color,
           darken($primary-color, 35%));
+      border: none;
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
       border-bottom: 1px solid $secondary-color;
