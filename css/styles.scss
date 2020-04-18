@@ -1,11 +1,15 @@
 $primary-color: #2d7dd2;
 $secondary-color: #eeb902;
-$secondary-color-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg)
-  brightness(99%) contrast(98%);
+$secondary-color: #ee6c02;
+$secondary-color-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
+$secondary-color-filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
 
-$oswald-font-family: "Oswald", sans-serif;
-$open-sans-font-family: "Open Sans", sans-serif;
-$pt-serif: "PT Serif", serif;
+$oswald-font-family: "Oswald",
+sans-serif;
+$open-sans-font-family: "Open Sans",
+sans-serif;
+$pt-serif: "PT Serif",
+serif;
 
 $button-radius-small: 5px;
 $button-radius-medium: 25px;
@@ -23,8 +27,8 @@ body {
   font-family: $open-sans-font-family;
   font-size: 16px;
   line-height: 1.6;
-  color: #999;
-  background: #131313;
+  color: #414141;
+  background: #fff;
 
   @media (max-width: $xs-break-point) {
     line-height: 1.4;
@@ -137,11 +141,9 @@ body {
     font-size: 22px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: linear-gradient(
-      to right,
-      $primary-color,
-      darken($primary-color, 35%)
-    );
+    background: linear-gradient(to right,
+        $primary-color,
+        darken($primary-color, 35%));
     border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
     border-bottom: 1px solid $secondary-color;
@@ -149,7 +151,7 @@ body {
     transition: box-shadow 0.3s, color 0.3s;
 
     &:hover {
-      box-shadow: 0 0 50px rgba($secondary-color, 0.1);
+      box-shadow: 0 0 40px rgba($primary-color, 0.2);
       color: $secondary-color;
     }
 
@@ -180,6 +182,7 @@ body {
       align-items: center;
       font-family: $oswald-font-family;
       font-size: 16px;
+      color: #ddd;
       cursor: pointer;
       width: 200px;
       transition: color 0.3s;
@@ -214,7 +217,7 @@ body {
 
 .main {
   .section:nth-child(even) {
-    background-color: #171717;
+    background-color: #f7f7f7;
   }
 }
 
@@ -233,7 +236,7 @@ body {
   &__title {
     position: relative;
     display: inline-block;
-    color: $secondary-color;
+    color: #333;
     font-family: $oswald-font-family;
     font-size: 32px;
     letter-spacing: 1px;
@@ -257,12 +260,10 @@ body {
       top: 0;
       bottom: 0;
       width: 4px;
-      background: linear-gradient(
-        to top,
-        $primary-color,
-        darken($primary-color, 40%)
-      );
-      border-bottom: 2px solid $secondary-color;
+      background: linear-gradient(to top,
+          $secondary-color,
+          transparent);
+      border-bottom: 4px solid $primary-color;
 
       @media (max-width: $xs-break-point) {
         left: -15px;
@@ -286,7 +287,7 @@ body {
     &-contact {
       display: block;
       text-decoration: none;
-      color: #fff;
+      color: #333;
       font-family: $oswald-font-family;
       font-size: 24px;
       transition: color 0.3s;
@@ -307,8 +308,7 @@ body {
         width: 20px;
         vertical-align: middle;
         margin-right: 10px;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
-          brightness(103%) contrast(103%);
+        filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
       }
     }
 
@@ -319,8 +319,7 @@ body {
       img {
         width: 15px;
         vertical-align: middle;
-        filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(182deg)
-          brightness(89%) contrast(94%);
+        filter: invert(28%) sepia(51%) saturate(0%) hue-rotate(207deg) brightness(92%) contrast(117%);
       }
     }
 
@@ -392,7 +391,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    background-color: #222222;
+    background-color: #eee;
     padding: 50px;
     border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
@@ -413,7 +412,7 @@ body {
     }
 
     &:hover {
-      box-shadow: 0 0 30px rgba($secondary-color, 0.1);
+      box-shadow: 0 0 30px rgba($primary-color, 0.2);
     }
 
     &-desc {
@@ -495,11 +494,9 @@ body {
       text-transform: uppercase;
       text-align: center;
       color: #fff;
-      background: linear-gradient(
-        to right,
-        $primary-color,
-        darken($primary-color, 35%)
-      );
+      background: linear-gradient(to right,
+          $primary-color,
+          darken($primary-color, 35%));
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
       cursor: pointer;
@@ -511,7 +508,7 @@ body {
       }
 
       &:hover {
-        box-shadow: 0 0 20px rgba($secondary-color, 0.1);
+        box-shadow: 0 0 20px rgba($primary-color, 0.5);
         color: $secondary-color;
       }
     }
@@ -520,12 +517,10 @@ body {
   &__divider {
     margin: 60px 0 70px;
     height: 1px;
-    background: linear-gradient(
-      to left,
-      transparent 0%,
-      rgba($color: $primary-color, $alpha: 0.3) 50%,
-      transparent 100%
-    );
+    background: linear-gradient(to left,
+        transparent 0%,
+        rgba($color: $primary-color, $alpha: 0.5) 50%,
+        transparent 100%);
 
     @media (max-width: $sm-break-point) {
       margin: 60px 0;
@@ -640,7 +635,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    > * {
+    >* {
       margin-bottom: 30px;
 
       &:last-child {
@@ -699,11 +694,9 @@ body {
       padding: 10px 0;
       margin-top: 30px;
       color: #fff;
-      background: linear-gradient(
-        to right,
-        $primary-color,
-        darken($primary-color, 35%)
-      );
+      background: linear-gradient(to right,
+          $primary-color,
+          darken($primary-color, 35%));
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
       border-bottom: 1px solid $secondary-color;
@@ -715,7 +708,7 @@ body {
       }
 
       &:hover {
-        box-shadow: 0 0 30px rgba($secondary-color, 0.1);
+        box-shadow: 0 0 30px rgba($primary-color, 0.3);
         color: $secondary-color;
       }
     }

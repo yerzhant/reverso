@@ -8,8 +8,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #999;
-  background: #131313;
+  color: #414141;
+  background: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -31,7 +31,7 @@ body {
   unicode-bidi: bidi-override;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  color: #eeb902;
+  color: #ee6c02;
 }
 
 @-webkit-keyframes logo {
@@ -162,7 +162,7 @@ body {
   background: linear-gradient(to right, #2d7dd2, #0e263f);
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
-  border-bottom: 1px solid #eeb902;
+  border-bottom: 1px solid #ee6c02;
   cursor: pointer;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
@@ -171,9 +171,9 @@ body {
 }
 
 .header__order-button:hover {
-  -webkit-box-shadow: 0 0 50px rgba(238, 185, 2, 0.1);
-          box-shadow: 0 0 50px rgba(238, 185, 2, 0.1);
-  color: #eeb902;
+  -webkit-box-shadow: 0 0 40px rgba(45, 125, 210, 0.2);
+          box-shadow: 0 0 40px rgba(45, 125, 210, 0.2);
+  color: #ee6c02;
 }
 
 @media (max-width: 1000px) {
@@ -220,6 +220,7 @@ body {
           align-items: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
+  color: #ddd;
   cursor: pointer;
   width: 200px;
   -webkit-transition: color 0.3s;
@@ -233,19 +234,19 @@ body {
 }
 
 .header__bottom-link:hover {
-  color: #eeb902;
+  color: #ee6c02;
 }
 
 .header__bottom-link:hover .header__bottom-icon {
-  -webkit-box-shadow: 0 0 10px rgba(238, 185, 2, 0.9), inset 0 0 100px rgba(238, 185, 2, 0.4);
-          box-shadow: 0 0 10px rgba(238, 185, 2, 0.9), inset 0 0 100px rgba(238, 185, 2, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(238, 108, 2, 0.9), inset 0 0 100px rgba(238, 108, 2, 0.4);
+          box-shadow: 0 0 10px rgba(238, 108, 2, 0.9), inset 0 0 100px rgba(238, 108, 2, 0.4);
 }
 
 .header__bottom-icon {
   width: 40px;
   margin-bottom: 10px;
-  -webkit-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
-          filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
+  -webkit-filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
+          filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
@@ -260,7 +261,7 @@ body {
 }
 
 .main .section:nth-child(even) {
-  background-color: #171717;
+  background-color: #f7f7f7;
 }
 
 .section {
@@ -283,7 +284,7 @@ body {
 .section__title {
   position: relative;
   display: inline-block;
-  color: #eeb902;
+  color: #333;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
   letter-spacing: 1px;
@@ -312,9 +313,9 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2d7dd2), to(#09192a));
-  background: linear-gradient(to top, #2d7dd2, #09192a);
-  border-bottom: 2px solid #eeb902;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee6c02), to(transparent));
+  background: linear-gradient(to top, #ee6c02, transparent);
+  border-bottom: 4px solid #2d7dd2;
 }
 
 @media (max-width: 1000px) {
@@ -342,7 +343,7 @@ body {
 .section__text-contact {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   -webkit-transition: color 0.3s;
@@ -354,20 +355,20 @@ body {
 }
 
 .section__text-contact:hover {
-  color: #eeb902;
+  color: #ee6c02;
 }
 
 .section__text-contact:hover img {
-  -webkit-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
-          filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
+  -webkit-filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
+          filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
 }
 
 .section__text-contact img {
   width: 20px;
   vertical-align: middle;
   margin-right: 10px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  -webkit-filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
+          filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
 }
 
 .section__text-address {
@@ -378,8 +379,8 @@ body {
 .section__text-address img {
   width: 15px;
   vertical-align: middle;
-  -webkit-filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(89%) contrast(94%);
-          filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(89%) contrast(94%);
+  -webkit-filter: invert(28%) sepia(51%) saturate(0%) hue-rotate(207deg) brightness(92%) contrast(117%);
+          filter: invert(28%) sepia(51%) saturate(0%) hue-rotate(207deg) brightness(92%) contrast(117%);
 }
 
 .section__text p {
@@ -417,8 +418,8 @@ body {
   top: 0;
   left: -80px;
   width: 45px;
-  -webkit-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
-          filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
+  -webkit-filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
+          filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
 }
 
 @media (max-width: 1000px) {
@@ -431,7 +432,7 @@ body {
 
 .section__list-item-title {
   font-family: "Oswald", sans-serif;
-  color: #eeb902;
+  color: #ee6c02;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -474,11 +475,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 400px;
-  background-color: #222222;
+  background-color: #eee;
   padding: 50px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
-  border-bottom: 1px solid #eeb902;
+  border-bottom: 1px solid #ee6c02;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s, color 0.3s;
@@ -502,8 +503,8 @@ body {
 }
 
 .section__card:hover {
-  -webkit-box-shadow: 0 0 30px rgba(238, 185, 2, 0.1);
-          box-shadow: 0 0 30px rgba(238, 185, 2, 0.1);
+  -webkit-box-shadow: 0 0 30px rgba(45, 125, 210, 0.2);
+          box-shadow: 0 0 30px rgba(45, 125, 210, 0.2);
 }
 
 .section__card-desc p {
@@ -512,13 +513,13 @@ body {
 
 .section__card-desc-note {
   font-weight: 500;
-  color: #eeb902;
+  color: #ee6c02;
 }
 
 .section__card-title {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  color: #eeb902;
+  color: #ee6c02;
   margin-bottom: 30px;
 }
 
@@ -538,7 +539,7 @@ body {
 .section__card-list-title {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
-  color: #eeb902;
+  color: #ee6c02;
   margin-bottom: 10px;
 }
 
@@ -574,7 +575,7 @@ body {
 .section__card-prices-price {
   font-family: "PT Serif", serif;
   font-size: 26px;
-  color: #eeb902;
+  color: #ee6c02;
 }
 
 @media (max-width: 1000px) {
@@ -610,16 +611,16 @@ body {
 }
 
 .section__card-button:hover {
-  -webkit-box-shadow: 0 0 20px rgba(238, 185, 2, 0.1);
-          box-shadow: 0 0 20px rgba(238, 185, 2, 0.1);
-  color: #eeb902;
+  -webkit-box-shadow: 0 0 20px rgba(45, 125, 210, 0.5);
+          box-shadow: 0 0 20px rgba(45, 125, 210, 0.5);
+  color: #ee6c02;
 }
 
 .section__divider {
   margin: 60px 0 70px;
   height: 1px;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, rgba(45, 125, 210, 0.3)), to(transparent));
-  background: linear-gradient(to left, transparent 0%, rgba(45, 125, 210, 0.3) 50%, transparent 100%);
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, rgba(45, 125, 210, 0.5)), to(transparent));
+  background: linear-gradient(to left, transparent 0%, rgba(45, 125, 210, 0.5) 50%, transparent 100%);
 }
 
 @media (max-width: 1300px) {
@@ -771,7 +772,7 @@ body {
 .footer__form-title {
   font-family: "Oswald", sans-serif;
   font-size: 26px;
-  color: #eeb902;
+  color: #ee6c02;
 }
 
 @media (max-width: 1000px) {
@@ -799,13 +800,13 @@ body {
 }
 
 .footer__form input:focus {
-  border-bottom: 3px solid #eeb902;
+  border-bottom: 3px solid #ee6c02;
 }
 
 .footer__form-input::after {
   display: block;
   content: "";
-  border-bottom: 3px solid #eeb902;
+  border-bottom: 3px solid #ee6c02;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -830,7 +831,7 @@ body {
   background: linear-gradient(to right, #2d7dd2, #0e263f);
   border-top-left-radius: 5px;
   border-bottom-right-radius: 25px;
-  border-bottom: 1px solid #eeb902;
+  border-bottom: 1px solid #ee6c02;
   cursor: pointer;
   -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
   transition: color 0.3s, -webkit-box-shadow 0.3s;
@@ -845,8 +846,8 @@ body {
 }
 
 .footer__form-button:hover {
-  -webkit-box-shadow: 0 0 30px rgba(238, 185, 2, 0.1);
-          box-shadow: 0 0 30px rgba(238, 185, 2, 0.1);
-  color: #eeb902;
+  -webkit-box-shadow: 0 0 30px rgba(45, 125, 210, 0.3);
+          box-shadow: 0 0 30px rgba(45, 125, 210, 0.3);
+  color: #ee6c02;
 }
 /*# sourceMappingURL=styles.css.map */
