@@ -47,8 +47,8 @@ body {
     direction: rtl;
     unicode-bidi: bidi-override;
     transform: rotateY(180deg);
-    // margin-left: -2px;
-    // margin-right: 2px;
+    margin-left: -1px;
+    margin-right: 1px;
   }
 }
 
@@ -474,6 +474,7 @@ body {
       &-price {
         font-family: $pt-serif;
         font-size: 26px;
+        font-weight: 700;
         color: $secondary-color;
 
         @media (max-width: $xs-break-point) {

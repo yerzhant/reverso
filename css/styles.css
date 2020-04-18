@@ -31,6 +31,8 @@ body {
   unicode-bidi: bidi-override;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  margin-left: -1px;
+  margin-right: 1px;
 }
 
 @-webkit-keyframes logo {
@@ -570,6 +572,7 @@ body {
 .section__card-prices-price {
   font-family: "PT Serif", serif;
   font-size: 26px;
+  font-weight: 700;
   color: #808080;
 }
 
