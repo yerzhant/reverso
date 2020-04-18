@@ -1,8 +1,9 @@
-$primary-color: #2d7dd2;
-$secondary-color: #eeb902;
-$secondary-color: #ee6c02;
-$secondary-color-filter: invert(68%) sepia(75%) saturate(1040%) hue-rotate(4deg) brightness(99%) contrast(98%);
-$secondary-color-filter: invert(52%) sepia(36%) saturate(6246%) hue-rotate(4deg) brightness(98%) contrast(98%);
+$primary-color: #111;
+$secondary-color: #808080;
+$secondary-color-filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(176deg) brightness(97%) contrast(92%);
+
+$text-color: #414141;
+$title-color: #333;
 
 $oswald-font-family: "Oswald",
 sans-serif;
@@ -27,7 +28,7 @@ body {
   font-family: $open-sans-font-family;
   font-size: 16px;
   line-height: 1.6;
-  color: #414141;
+  color: $text-color;
   background: #fff;
 
   @media (max-width: $xs-break-point) {
@@ -48,7 +49,6 @@ body {
     transform: rotateY(180deg);
     // margin-left: -2px;
     // margin-right: 2px;
-    color: $secondary-color;
   }
 }
 
@@ -95,16 +95,11 @@ body {
     z-index: 10;
     position: absolute;
     top: 12%;
-    width: 200px;
-    filter: drop-shadow(0 0 2px white);
+    width: 250px;
     animation: logo 2s 1s ease-in-out;
 
     @media (max-width: $xs-break-point) {
       width: 150px;
-    }
-
-    &_white {
-      filter: drop-shadow(0 0 2px $primary-color);
     }
   }
 
@@ -171,7 +166,7 @@ body {
     right: 0;
     left: 0;
     height: 100px;
-    background-color: rgba($primary-color, 0.15);
+    background-color: rgba($primary-color, 0.5);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -208,7 +203,7 @@ body {
     &-icon {
       width: 40px;
       margin-bottom: 10px;
-      filter: $secondary-color-filter;
+      filter: invert(97%) sepia(2%) saturate(782%) hue-rotate(203deg) brightness(116%) contrast(73%);
       transition: box-shadow 0.3s;
 
       @media (max-width: $xs-break-point) {
@@ -240,7 +235,7 @@ body {
   &__title {
     position: relative;
     display: inline-block;
-    color: #333;
+    color: $title-color;
     font-family: $oswald-font-family;
     font-size: 32px;
     letter-spacing: 1px;
@@ -264,10 +259,7 @@ body {
       top: 0;
       bottom: 0;
       width: 4px;
-      background: linear-gradient(to top,
-          $secondary-color,
-          transparent);
-      border-bottom: 4px solid $primary-color;
+      background: $title-color;
 
       @media (max-width: $xs-break-point) {
         left: -15px;
@@ -291,7 +283,7 @@ body {
     &-contact {
       display: block;
       text-decoration: none;
-      color: #333;
+      color: $title-color;
       font-family: $oswald-font-family;
       font-size: 24px;
       transition: color 0.3s;
@@ -650,7 +642,7 @@ body {
     &-title {
       font-family: $oswald-font-family;
       font-size: 26px;
-      color: $secondary-color;
+      color: #fff;
 
       @media (max-width: $xs-break-point) {
         font-size: 20px;
@@ -660,12 +652,12 @@ body {
     input {
       background-color: transparent;
       border: none;
-      border-bottom: 3px solid rgba($primary-color, 0.2);
+      border-bottom: 2px solid rgba(#fff, 0.2);
       color: #fff;
       font-size: 20px;
       outline: none;
       padding: 10px 0;
-      margin-bottom: -3px;
+      margin-bottom: -2px;
       width: 100%;
 
       @media (max-width: $xs-break-point) {
@@ -673,7 +665,11 @@ body {
       }
 
       &:focus {
-        border-bottom: 3px solid $secondary-color;
+        border-bottom: 2px solid #fff;
+      }
+
+      &::placeholder {
+        color: #fff;
       }
     }
 
@@ -681,7 +677,7 @@ body {
       &::after {
         display: block;
         content: "";
-        border-bottom: 3px solid $secondary-color;
+        border-bottom: 2px solid #fff;
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
       }
