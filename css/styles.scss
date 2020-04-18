@@ -306,6 +306,12 @@ body {
         margin-right: 10px;
         filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
       }
+
+      &_instagram {
+        img {
+          width: 18px;
+        }
+      }
     }
 
     &-address {

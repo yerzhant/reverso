@@ -368,6 +368,10 @@ body {
           filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
 }
 
+.section__text-contact_instagram img {
+  width: 18px;
+}
+
 .section__text-address {
   margin-top: 30px;
   font-size: 0.9em;
