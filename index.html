@@ -477,17 +477,22 @@
   </main>
 
   <footer class="footer">
-    <form action="/mail.php" class="footer__form" method="POST">
+    <form class="footer__form">
       <div class="footer__form-title">Или оставьте нам Ваши координаты, чтобы мы могли проконсультировать Вас:</div>
       <div class="footer__form-input"><input type="text" placeholder="Имя" name="name"></div>
       <div class="footer__form-input"><input type="tel" placeholder="Телефон" name="phone"></div>
       <div class="footer__form-input"><input type="email" placeholder="Электронная почта" name="email"></div>
-      <button class="footer__form-button" type="submit">ОТПРАВИТЬ</button>
+      <button class="footer__form-button">ОТПРАВИТЬ</button>
     </form>
   </footer>
 
+  <div class="dialog dialog_form-confirmation">
+    <div class="dialog__text">Ваша заявка принята. Мы свяжемся с Вами в ближайшее время.</div>
+    <div class="dialog__button">OK</div>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=1"></script>
   <script src="js/owl.carousel.min.js"></script>
 </body>
 

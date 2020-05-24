@@ -18,6 +18,15 @@ $(document).ready(() => {
     scrollToSelector("#prices");
     return false;
   });
+
+  $(".footer__form-button").click(() => {
+    $(".dialog_form-confirmation").fadeIn();
+    return false;
+  });
+
+  $(".dialog_form-confirmation .dialog__button").click(() => {
+    $(".dialog_form-confirmation").fadeOut();
+  });
 });
 
 function scrollToSelector(selector) {

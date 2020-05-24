@@ -892,4 +892,57 @@ body {
           box-shadow: 0 0 30px rgba(17, 17, 17, 0.3);
   color: #808080;
 }
+
+.dialog {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 100px;
+  right: calc(50% - 300px);
+  padding: 30px 50px;
+  background-color: #eee;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 1000px) {
+  .dialog {
+    width: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}
+
+.dialog__button {
+  margin-top: 15px;
+  padding: 10px 0px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#111), to(black));
+  background: linear-gradient(to right, #111, black);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, color 0.3s;
+  transition: box-shadow 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+}
+
+@media (max-width: 1000px) {
+  .dialog__button {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+
+.dialog__button:hover {
+  -webkit-box-shadow: 0 0 20px rgba(17, 17, 17, 0.5);
+          box-shadow: 0 0 20px rgba(17, 17, 17, 0.5);
+  color: #808080;
+}
 /*# sourceMappingURL=styles.css.map */
