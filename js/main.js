@@ -20,8 +20,7 @@ $(document).ready(() => {
   });
 
   $(".footer__form-button").click(() => {
-    $(".dialog_form-confirmation").fadeIn();
-    return false;
+    sendMail();
   });
 
   $(".dialog_form-confirmation .dialog__button").click(() => {
@@ -36,6 +35,20 @@ function scrollToSelector(selector) {
     },
     1000
   );
+}
+
+function sendMail() {
+  const formArray = $(".footer__form").serializeArray();
+  const data = {};
+  $.map(formArray, function (n, i) {
+    data[n["name"]] = n["value"];
+  });
+
+  $.post("/mail.php", data, () => {
+    fbq("track", "Lead");
+    $(".footer__form").trigger("reset");
+    $(".dialog_form-confirmation").fadeIn();
+  });
 }
 
 $(document).ready(function () {
