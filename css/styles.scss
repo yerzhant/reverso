@@ -1,14 +1,16 @@
 $primary-color: #111;
 $secondary-color: #808080;
-$secondary-color-filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(176deg)
-  brightness(97%) contrast(92%);
+$secondary-color-filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(176deg) brightness(97%) contrast(92%);
 
 $text-color: #414141;
 $title-color: #333;
 
-$oswald-font-family: "Oswald", sans-serif;
-$open-sans-font-family: "Open Sans", sans-serif;
-$pt-serif: "PT Serif", serif;
+$oswald-font-family: "Oswald",
+sans-serif;
+$open-sans-font-family: "Open Sans",
+sans-serif;
+$pt-serif: "PT Serif",
+serif;
 
 $button-radius-small: 5px;
 $button-radius-medium: 25px;
@@ -138,11 +140,9 @@ body {
     font-size: 22px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: linear-gradient(
-      to right,
-      $primary-color,
-      darken($primary-color, 35%)
-    );
+    background: linear-gradient(to right,
+        $primary-color,
+        darken($primary-color, 35%));
     border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
     border-bottom: 1px solid $secondary-color;
@@ -203,8 +203,7 @@ body {
     &-icon {
       width: 40px;
       margin-bottom: 10px;
-      filter: invert(97%) sepia(2%) saturate(782%) hue-rotate(203deg)
-        brightness(116%) contrast(73%);
+      filter: invert(97%) sepia(2%) saturate(782%) hue-rotate(203deg) brightness(116%) contrast(73%);
       transition: box-shadow 0.3s;
 
       @media (max-width: $xs-break-point) {
@@ -309,8 +308,7 @@ body {
         width: 20px;
         vertical-align: middle;
         margin-right: 10px;
-        filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg)
-          brightness(93%) contrast(87%);
+        filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(145deg) brightness(93%) contrast(87%);
 
         @media (max-width: $xs-break-point) {
           width: 16px;
@@ -340,8 +338,7 @@ body {
       img {
         width: 15px;
         vertical-align: middle;
-        filter: invert(28%) sepia(51%) saturate(0%) hue-rotate(207deg)
-          brightness(92%) contrast(117%);
+        filter: invert(28%) sepia(51%) saturate(0%) hue-rotate(207deg) brightness(92%) contrast(117%);
       }
     }
 
@@ -482,8 +479,12 @@ body {
     }
 
     &-prices {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100px;
       margin-top: 20px;
-      padding: 20px;
+      padding: 0 20px;
       text-align: center;
       background-color: rgba($primary-color, 0.2);
       border-top-left-radius: $button-radius-small;
@@ -517,11 +518,9 @@ body {
       text-transform: uppercase;
       text-align: center;
       color: #fff;
-      background: linear-gradient(
-        to right,
-        $primary-color,
-        darken($primary-color, 35%)
-      );
+      background: linear-gradient(to right,
+          $primary-color,
+          darken($primary-color, 35%));
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
       cursor: pointer;
@@ -542,12 +541,10 @@ body {
   &__divider {
     margin: 60px 0 70px;
     height: 1px;
-    background: linear-gradient(
-      to left,
-      transparent 0%,
-      rgba($color: $primary-color, $alpha: 0.5) 50%,
-      transparent 100%
-    );
+    background: linear-gradient(to left,
+        transparent 0%,
+        rgba($color: $primary-color, $alpha: 0.5) 50%,
+        transparent 100%);
 
     @media (max-width: $sm-break-point) {
       margin: 60px 0;
@@ -662,7 +659,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    > * {
+    >* {
       margin-bottom: 30px;
 
       &:last-child {
@@ -725,11 +722,9 @@ body {
       padding: 10px 0;
       margin-top: 30px;
       color: #fff;
-      background: linear-gradient(
-        to right,
-        $primary-color,
-        darken($primary-color, 35%)
-      );
+      background: linear-gradient(to right,
+          $primary-color,
+          darken($primary-color, 35%));
       border: none;
       border-top-left-radius: $button-radius-small;
       border-bottom-right-radius: $button-radius-medium;
@@ -775,11 +770,9 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    background: linear-gradient(
-      to right,
-      $primary-color,
-      darken($primary-color, 35%)
-    );
+    background: linear-gradient(to right,
+        $primary-color,
+        darken($primary-color, 35%));
     border-top-left-radius: $button-radius-small;
     border-bottom-right-radius: $button-radius-medium;
     cursor: pointer;
