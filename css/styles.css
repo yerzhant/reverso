@@ -345,16 +345,13 @@ body {
   font-size: 24px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1000px) {
   .section__text-contact {
     font-size: 20px;
   }
-}
-
-.section__text-contact:first-child {
-  font-family: "PT Serif", serif;
 }
 
 .section__text-contact:hover {
@@ -381,6 +378,7 @@ body {
 }
 
 .section__text-contact_phone {
+  font-family: "PT Serif", serif;
   font-weight: bold;
 }
 
